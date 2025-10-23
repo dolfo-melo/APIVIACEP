@@ -4,6 +4,7 @@
     border: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
 }
 
 main{
@@ -14,38 +15,52 @@ main{
 .mainContainer{
     width: 100vw;
     height: 100vh;
+    background-color: rgba(133,11,230,0.2);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .leftContainer{
-    width: 50%;
+    width: 50vw;
     height: 100%;
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.leftContainer img{
+    width: 400px;
+}
+
+.leftContainer h1{
+    margin-top: 30px;
+    color: white;
+    text-shadow: 2px 0px 4px #CF00EB;
+}
+
 .rightContainer{
-    width: 50%;
+    width: 50vw;
     height: 100%;
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 15%;
+    margin: 2%;
 }
 
 .container{
-    width: 50%;
-    height: 60%;
+    width: 600px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(61,11,230);
+    color: white;
     border-radius: 15px;
     gap: 5px;
 }
@@ -57,14 +72,32 @@ main{
 .container input{
     width: 300px;
     height: 50px;
-    background-color: rgba();
-    border-radius: 15px;
+    color: white;
+    text-shadow: 2px 0px 4px #CF00EB;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(61,11,230,0.7);
 }
+
+.container input#cep{
+    color: white;
+    text-shadow: 0px 0px 0px;
+    text-align: center;
+}
+
+.container input::placeholder{
+    color: white;
+    text-align: center;
+}
+
 
 button{
     margin-top: 20px;
     width: 200px;
     height: 50px;
     border-radius: 15px;
-    background-color: aqua;
+    background-color: rgb(133,11,230);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
 }

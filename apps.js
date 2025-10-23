@@ -1,4 +1,4 @@
-function capturarDados(){
+function capturarDados(event){
     let inputCep = document.getElementById("cep").value
     buscarCep(inputCep)
 }
@@ -9,9 +9,9 @@ async function buscarCep(inputCep) {
 }
 
 function dadosCapturados(dados){
-    document.getElementById("estado").value = dados.uf
-    document.getElementById("cidade").value = dados.localidade
-    document.getElementById("bairro").value = dados.bairro
+    document.getElementById("estado").value = "Estado: "  + dados.uf
+    document.getElementById("cidade").value = "Cidade: " + dados.localidade
+    document.getElementById("bairro").value = "Bairro: " + dados.bairro
     document.getElementById("endereco").value = dados.logradouro
 }
 

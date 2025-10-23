@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/logo.png">
+    <link rel="icon" href="assets/logo.svg">
     <title>CepJs</title>
 </head>
 <body>
    <main>
     <div class="mainContainer">
         <div class="leftContainer">
+            <img src="assets/logo.png" alt="logo">
+            <h1>Desenvolvido por Rodolfo Melo © 2025</h1>
         </div>
         <div class="rightContainer">
             <div class="container">
-                <h2>Buscar CEP</h2>
                 <input type="text" name="cep" id="cep" placeholder="Digite seu CEP">
-                <input class="estado" type="text" name="estado" id="estado" disabled>
-                <input class="cidade" type="text" name="cidade" id="cidade" disabled>
-                <input class="bairro" type="text" name="bairro" id="bairro" disabled>
                 <input class="endereco" type="text" name="endereco" id="endereco" disabled>
-                <button type="submit" id="btnCep" onclick="capturarDados()">Buscar CEP</button>
+                <input class="bairro" type="text" name="bairro" id="bairro" disabled>
+                <input class="cidade" type="text" name="cidade" id="cidade" disabled>
+                <input class="estado" type="text" name="estado" id="estado" disabled>
+                <button type="submit" id="btnCep" onclick="capturarDados(event)">Buscar CEP</button>
             </div>
         </div>
     </div>
